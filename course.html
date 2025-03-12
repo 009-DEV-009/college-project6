@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #000000;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 45px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 600px;
+            justify-content: center;
+        }
+
+        .card {
+            width: 180px;
+            height: 200px;
+            background: rgb(206, 18, 28);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 10px 6px 12px rgba(255, 255, 255, 0.3);
+        }
+
+        .card h3 {
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .card p {
+            color: #ffffff;
+            font-size: 14px;
+            text-align: center;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>COURSE</h1>
+
+    <div class="container">
+        <div class="card"><h3>B C A</h3><p>Batchelor Of Computer Application</p></div>
+        <div class="card"><h3>M C A </h3><p>Masters In Computer Application<p></div>
+        <div class="card"><h3>WEB - DEV</h3><p>Web Davlopment</p></div>
+        <div class="card"><h3>B M L T</h3><p>Bachelor of Medical Laboratory Technology</p></div>
+        <div class="card"><h3>D M L T</h3><p>Diploma in Medical Laboratory Technology</p></div>
+        <div class="card"><h3>M L T</h3><p>Medical Laboratory Technology</p></div>
+        <div class="card"><h3>M S C - I T </h3><p>Master of Science in Information Technology</p></div>
+        <div class="card"><h3>B B A</h3><p>Bachelor of Business Administration</p></div>
+        <div class="card"><h3>M B A</h3><p>Masters of Business Administration</p></div>
+    </div>
+
+</body>
+</html>

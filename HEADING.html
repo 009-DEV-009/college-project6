@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<style  type="text/css">
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;px
+}
+
+.div1{
+  height: 65px;
+  width: 70px;
+  background-color:white;
+  border-radius:50px;
+}
+
+.div2{
+  height: 65px;
+  width: 85%;
+  background-color:skyblue;
+  border-radius: 80px;
+}
+
+.div3{
+  height: 65px;
+  width: 70px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+}
+
+.image1{
+  height: 65px;
+  width: 70px;
+  border-radius: 50px;
+}
+
+.image2{
+  height: 65px;
+  width: 70px;
+  border-radius: 50px;
+}
+
+.mar{
+  font-size: 50px;
+  color: rgb(238, 6, 76);
+}
+.image1{
+    animation: blink 2s linear infinite;
+    color: rgb(243, 89, 18);
+  }
+ .image1:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.3);
+ } 
+  @keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+  }
+  .image2{
+    animation: blink 2s linear infinite;
+    color: rgb(243, 89, 18);
+   
+  }
+  .image2:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.3);
+  }
+  @keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+  }
+  .mar:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+</style>
+
+<body bgcolor="skyblue">
+  <div class="main">
+   <div class="div1">
+    <img src="logo.jpg" class="image1">
+   </div>
+
+   <div class="div2">
+    
+   <marquee class="mar"><B>DATAPRO  AISECT</B></marquee>
+   
+   </div>
+
+   <div class="div3">
+    <img src="logo.jpg" class="image2">
+   </div>
+
+  </div>
+
+</body>
+</html>
